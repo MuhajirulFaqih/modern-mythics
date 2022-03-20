@@ -1,0 +1,271 @@
+:root {
+    font-size: 14px;
+}
+/* ::placeholder {
+    color: #79729A;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: #79729A;
+}
+::-ms-input-placeholder {
+    color: #79729A;
+} */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #100F10 !important;
+    color: #F8F8F8;
+}
+
+@font-face {
+    font-family: 'Felix Titling';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/FelixTitling.woff2') format('woff2'),
+        url("fonts/FelixTitling.woff") format('woff'),
+        url("fonts/FelixTitling.ttf") format('truetype');
+}
+
+.nav {
+    position: fixed;
+    min-height: 500px;
+    max-height: 100vh;
+    width: 100%;
+    transition: all .5s;
+    background: #101011;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -800px;
+    z-index: 50;
+    overflow-y: auto;
+}
+
+.nav.active {
+    margin-top: 0;
+}
+
+#hero {
+    background: url('../images/img-hero.png') no-repeat center center;
+    background-size: cover;
+    min-height: 460px;
+}
+
+.text-title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.text-title:before,
+.text-title:after {
+    content: "";
+    margin: auto;
+    height: 2px;
+    flex: 1 1;
+}
+.text-title:before {
+    margin-right: 20px;
+    background: linear-gradient(90deg, rgba(199, 148, 100, 0) 0.12%, #C79464 100%);
+}
+.text-title:after {
+    margin-left: 20px;
+    background: linear-gradient(90deg, #C79464 0.12%, rgba(199, 148, 100, 0) 100%);
+}
+
+.collections-carousel .owl-item {
+    text-align: center;
+}
+.collections-carousel .owl-item img {
+    width: 85%;
+    display: inline-block;
+    transition: all .5s;
+}
+.collections-carousel .owl-item.active.center img {
+    width: 100%;
+    display: inline-block;
+}
+.collections-carousel .owl-stage-outer {
+    position: relative;
+}
+
+.collections-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.collections-carousel .owl-stage-outer::before {
+    content: '';
+    background: linear-gradient(90deg, #100F10 0%, rgba(16, 15, 16, 0) 35.13%, rgba(16, 15, 16, 0.0729927) 67.5%, #100F10 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.owl-prev, .owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.owl-next {
+    right: 0;
+}
+
+.roadmap-flow {
+    padding-right: 3rem;
+    position: relative;
+}
+
+.roadmap-flow::before {
+    content: '';
+    position: absolute;
+    left: 30.5px;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: rgba(217, 217, 217, 0.3);
+}
+.roadmap-body {
+    position: relative;
+    padding-left: 5rem;
+}
+.roadmap-flow-body {
+    position: relative;
+}
+
+.roadmap-body > div:after {
+    content: url("data:image/svg+xml,%3Csvg width='100%' height='26' viewBox='0 0 110 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.1543 9.57086H100.354' stroke='white' stroke-width='2' stroke-dasharray='9 9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M21.1562 9.57086C21.1562 4.6003 17.1268 0.570862 12.1562 0.570862C7.18569 0.570862 3.15625 4.6003 3.15625 9.57086C3.15625 14.5414 7.18569 18.5709 12.1562 18.5709C17.1268 18.5709 21.1562 14.5414 21.1562 9.57086ZM12.1562 1.57086C16.5745 1.57086 20.1562 5.15258 20.1562 9.57086C20.1562 13.9891 16.5745 17.5709 12.1562 17.5709C7.73797 17.5709 4.15625 13.9891 4.15625 9.57086C4.15625 5.15258 7.73797 1.57086 12.1562 1.57086Z' fill='white'/%3E%3Cg filter='url(%23filter0_d_939_80)'%3E%3Cpath d='M20.1562 9.57086C20.1562 5.15258 16.5745 1.57086 12.1562 1.57086C7.73797 1.57086 4.15625 5.15258 4.15625 9.57086C4.15625 13.9891 7.73797 17.5709 12.1562 17.5709C16.5745 17.5709 20.1562 13.9891 20.1562 9.57086Z' fill='%2398714D'/%3E%3C/g%3E%3Cpath d='M16.1562 9.57086C16.1562 7.36172 14.3654 5.57086 12.1562 5.57086C9.94711 5.57086 8.15625 7.36172 8.15625 9.57086C8.15625 11.78 9.94711 13.5709 12.1562 13.5709C14.3654 13.5709 16.1562 11.78 16.1562 9.57086Z' fill='%23E0A976'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M109.354 9.57086C109.354 4.6003 105.324 0.570862 100.354 0.570862C95.383 0.570862 91.3535 4.6003 91.3535 9.57086C91.3535 14.5414 95.383 18.5709 100.354 18.5709C105.324 18.5709 109.354 14.5414 109.354 9.57086ZM100.354 1.57086C104.772 1.57086 108.354 5.15258 108.354 9.57086C108.354 13.9891 104.772 17.5709 100.354 17.5709C95.9352 17.5709 92.3535 13.9891 92.3535 9.57086C92.3535 5.15258 95.9352 1.57086 100.354 1.57086Z' fill='white'/%3E%3Cpath d='M104.354 9.57086C104.354 7.36172 102.563 5.57086 100.354 5.57086C98.1444 5.57086 96.3535 7.36172 96.3535 9.57086C96.3535 11.78 98.1444 13.5709 100.354 13.5709C102.563 13.5709 104.354 11.78 104.354 9.57086Z' fill='%23E0A976'/%3E%3Cdefs%3E%3Cfilter id='filter0_d_939_80' x='0.15625' y='1.57086' width='24' height='24' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='4'/%3E%3CfeGaussianBlur stdDeviation='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_939_80'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_939_80' result='shape'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 19.5px;
+    z-index: 10;
+}
+
+.roadmap-body > div {
+    padding-top: 7rem;
+}
+
+.roadmap-body:first-child > div {
+    padding-top: 1.8rem;
+}
+
+.roadmap-body:first-child > div:after {
+    top: 0;
+}
+
+.roadmap-start {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -17px;
+    background-image: url('../images/trisula-start.png');
+    background-repeat: no-repeat;
+    z-index: 4;
+    background-size: 63px;
+    background-position-y: top;
+}
+
+.roadmap-middle {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('../images/trisula-middle.png');
+    background-repeat: repeat-y;
+    background-size: 63px;
+    transition: all 1.8s;
+}
+
+.roadmap-end {
+    width: 100%;
+    height: 5%;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    background-image: url('../images/trisula-end.png');
+    background-repeat: no-repeat;
+    z-index: 4;
+    background-size: 63px;
+    background-position-y: bottom;
+    transition: all 1.8s;
+}
+
+.faq-accordion .accordion-item {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    border-bottom: none;
+}
+
+.faq-accordion .accordion-body {
+    padding: 0 0 1rem;
+}
+
+.faq-accordion .accordion-button {
+    background: transparent;
+    font-size: 1rem;
+    padding: 1.25rem 0;
+    display: block;
+    color: #F8F8F8;
+}
+
+.faq-accordion .accordion-button:focus,
+.faq-accordion .accordion-button:not(.collapsed) {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #F8F8F8;
+}
+.accordion-button::after {
+    display: none;
+}
+.gold-line {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(199, 148, 100, 0) 0.12%, rgba(199, 148, 100, 0) 0.13%, #C79464 43.3%, #C79464 62.02%, rgba(199, 148, 100, 0) 100%);
+}
+
+
+/* `sm` applies to small devices (landscape phones, less than 576px) */
+@media (min-width: 576px) {
+    
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (min-width: 768px) {
+    
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media (min-width: 992px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+/* `xl` applies to large devices (desktops, less than 1200px) */
+@media (min-width: 1200px) {
+    
+}
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (min-width: 1400px) {
+    
+}
+
+/* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
+@media (min-width: 1900px) {
+    
+}
