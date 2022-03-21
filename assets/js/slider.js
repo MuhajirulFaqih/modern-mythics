@@ -29,17 +29,17 @@ $(window).scroll(function () {
     var elementTop = $(".roadmap-flow").offset().top;
     var percentage = ((windowBottom - elementTop) / $(".roadmap-flow").height()) * 100;
     if(percentage >= 100) {
-        if(percentage <= 102) {
-            $('.roadmap-middle').css('height', (percentage - 2) + '%')
-            $('.roadmap-end').css('height', (percentage - 2) + '%')
+        if(percentage <= 105) {
+            $('.roadmap-middle').css('height', (percentage - 5) + '%')
+            $('.roadmap-end').css('height', (percentage - 5) + '%')
         } else {
             $('.roadmap-middle').css('height', (100) + '%')
             $('.roadmap-end').css('height', (100) + '%')
         }
     } else if(percentage > 5) {
         if(percentage <= 9 ) {
-            $('.roadmap-middle').css('height', (5) + '%')
-            $('.roadmap-end').css('height', (5) + '%')
+            $('.roadmap-middle').css('height', (4) + '%')
+            $('.roadmap-end').css('height', (4) + '%')
         } else {
             $('.roadmap-middle').css('height', (percentage - 5) + '%')
             $('.roadmap-end').css('height', (percentage - 5) + '%')

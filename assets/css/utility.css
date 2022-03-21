@@ -77,6 +77,9 @@ a {
 .ls-offset-1-percent {
     letter-spacing: -0.01rem;
 }
+.ls-2 {
+    letter-spacing: 0.2em;
+}
 .ls-9-percent {
     letter-spacing: 0.09rem;
 }
@@ -101,6 +104,24 @@ a {
 .w-40 {
     width: 40px;
 }
+.spacer-24 {
+    margin-top: 24px;
+}
+.spacer-40 {
+    margin-top: 40px;
+}
+.spacer-64 {
+    margin-top: 64px;
+}
+.spacer-80 {
+    margin-top: 80px;
+}
+.spacer-96 {
+    margin-top: 96px;
+}
+.spacer-120 {
+    margin-top: 120px;
+}
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
@@ -109,7 +130,30 @@ a {
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
 @media (min-width: 768px) {
-    
+    .fs-md-12 {
+        font-size: 12px;
+    }
+    .fs-md-14 {
+        font-size: 14px;
+    }
+    .fs-md-16 {
+        font-size: 16px;
+    }
+    .fs-md-24 {
+        font-size: 24px;
+    }
+    .fs-md-20 {
+        font-size: 20px;
+    }
+    .fs-md-32 {
+        font-size: 32px;
+    }
+    .fs-md-40 {
+        font-size: 40px;
+    }
+    .fs-md-64 {
+        font-size: 64px;
+    }   
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
@@ -117,16 +161,75 @@ a {
     :root {
         font-size: 16px;
     }
+    .fs-lg-12 {
+        font-size: 12px;
+    }
+    .fs-lg-14 {
+        font-size: 14px;
+    }
+    .fs-lg-16 {
+        font-size: 16px;
+    }
+    .fs-lg-24 {
+        font-size: 24px;
+    }
+    .fs-lg-20 {
+        font-size: 20px;
+    }
+    .fs-lg-32 {
+        font-size: 32px;
+    }
+    .fs-lg-40 {
+        font-size: 40px;
+    }
+    .fs-lg-64 {
+        font-size: 64px;
+    }
+    .fs-lg-80 {
+        font-size: 80px;
+    }
+    .w-40 {
+        width: 40px;
+        height: 40px;
+    }
+    .spacer-lg-64 {
+        margin-top: 64px;
+    }
+    .spacer-lg-80 {
+        margin-top: 80px;
+    }
+    .spacer-lg-96 {
+        margin-top: 96px;
+    }
+    .spacer-lg-120 {
+        margin-top: 120px;
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
-    
+    .spacer-xl {
+        margin-top: 120px;
+    }
+    .spacer-xl-64 {
+        margin-top: 64px;
+    }
+    .spacer-xl-80 {
+        margin-top: 80px;
+    }
+    .spacer-xl-96 {
+        margin-top: 96px;
+    }
+    .spacer-xl-120 {
+        margin-top: 120px;
+    }
 }
 
 /* `xxl` applies to x-large devices (large desktops, less than 1400px) */
 @media (min-width: 1400px) {
-    
+    .container {
+        max-width: 1200px;
+    }
 }
 
 /* `xxxl` applies to x-large devices (large desktops, less than 1900px) */
