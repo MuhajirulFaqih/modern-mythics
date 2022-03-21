@@ -34,33 +34,35 @@ $("a[href*=\\#]:not([href=\\#])").on("click", function () {
     }
 });
 
-// $(window).scroll(function () {
-//     onScroll();
-//     if ($(this).scrollTop() > ($("#home").height() - 54)) {
-//         $('.nav').addClass('sticky');
-//     } else {
-//         $('.nav').removeClass('sticky');
-//     }
-// });
+$(window).scroll(function () {
+    onScroll();
+    if ($(this).scrollTop() > ($("#hero").height() - 54)) {
+        $('.nav').addClass('sticky');
+        $('#navbar .container').addClass('sticky');
+    } else {
+        $('.nav').removeClass('sticky');
+        $('#navbar .container').removeClass('sticky');
+    }
+});
 
-// function onScroll() {
-//     var scrollPos = $(document).scrollTop();
-//     $(".nav a").each(function() {
-//       var currLink = $(this);
+function onScroll() {
+    var scrollPos = $(document).scrollTop();
+    $(".nav a").each(function() {
+      var currLink = $(this);
 
-//       try {
-//         var refElement = $(currLink.attr("href"));
-//         if (
-//           (refElement.position().top - 100) <= scrollPos &&
-//           (refElement.position().top - 100) + refElement.height() > scrollPos
-//         ) {
-//           $(".nav li a").removeClass("active");
-//           currLink.addClass("active");
-//         } else {
-//           currLink.removeClass("active");
-//         }
-//       } catch (e) {
-//         // Ignore href='javascript:;'
-//       }
-//     });
-// }
+      try {
+        var refElement = $(currLink.attr("href"));
+        if (
+          (refElement.position().top - 100) <= scrollPos &&
+          (refElement.position().top - 100) + refElement.height() > scrollPos
+        ) {
+          $(".nav li a").removeClass("active");
+          currLink.addClass("active");
+        } else {
+          currLink.removeClass("active");
+        }
+      } catch (e) {
+        // Ignore href='javascript:;'
+      }
+    });
+}

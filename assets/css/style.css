@@ -47,6 +47,19 @@ body {
     margin-top: 0;
 }
 
+#navbar > .container.sticky {
+    transition: all .5s;
+}
+
+#navbar > .container.sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(16, 15, 16);
+    padding: 1em;
+    z-index: 40;
+}
+
 #hero {
     background: url('../images/img-hero.png') no-repeat center center;
     background-size: cover;
@@ -293,6 +306,7 @@ body {
         max-height: auto;
         background: rgba(16, 15, 16, 0.7);
         margin-top: 0px;
+        transition: all .5s;
     }
     .nav ul {
         display: inline-block;
@@ -300,6 +314,15 @@ body {
     .nav ul li {
         display: inline-block;
         margin: 0 1rem;
+    }
+    .nav ul li a.active {
+        color: #C79464 !important;
+    }
+    .nav.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(16, 15, 16);
     }
     .roadmap-start, .roadmap-middle, .roadmap-end {
         background-size: 80px;
