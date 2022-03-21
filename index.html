@@ -22,14 +22,22 @@
         <section id="navbar">
             <div class="container p-4 px-3 d-lg-none">
                 <div class="row text-white d-flex justify-content-center align-items-center">
-                    <div class="col-6 col-sm-4">
-                        <a href="" class="fs-16 d-inline-block text-gold ff-felix">
-                            MODERN MYTHICS
-                        </a>
-                    </div>
-                    <div class="col-6 text-end">
-                        <div class="w-20 d-inline-block">
-                            <div class="icon-toggle cursor-pointer nav-toggle"></div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="nav-mobile">
+                                <div class="row">
+                                    <div class="col-6 col-sm-4">
+                                        <a href="" class="fs-16 d-inline-block text-gold ff-felix">
+                                            MODERN MYTHICS
+                                        </a>
+                                    </div>
+                                    <div class="col-6 col-sm-8 text-end pe-sm-4">
+                                        <div class="w-20 d-inline-block">
+                                            <div class="icon-toggle cursor-pointer nav-toggle"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -49,7 +57,7 @@
                                         MODERN MYTHICS
                                     </a>
                                     <ul class="pt-4 px-0 text-light">
-                                        <li class="py-3"><a href="#collection" class="d-inline-block fs-16 fw-medium active">COLLECTION</a></li>
+                                        <li class="py-3"><a href="#collection" class="d-inline-block fs-16 fw-medium">COLLECTION</a></li>
                                         <li class="py-3"><a href="#lore" class="d-inline-block fs-16 fw-medium">LORE</a></li>
                                         <li class="py-3"><a href="#roadmap" class="d-inline-block fs-16 fw-medium">ROADMAP</a></li>
                                         <li class="py-3"><a href="#creators" class="d-inline-block fs-16 fw-medium">CREATORS</a></li>
@@ -67,264 +75,270 @@
              </div>
         </section>
 
-        <section id="hero" class="mb-5 position-relative">
+        <section id="hero" class="mb-5 position-relative overflow-hidden">
             <div class="container px-4">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <div class="d-inline-block w-16 w-lg-24 position-absolute bottom-57 bottom-xl-150">
+                        <div class="d-inline-block w-16 w-lg-24 position-absolute bottom-57 bottom-xl-150 z-index-3">
                             <a href="#mint"><div class="icon-arrow-bottom"></div></a>
                         </div>
+                        <video autoplay muted loop class="bg-video">
+                            <source src="assets/images/video-background.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="mint" class="spacer-24 spacer-lg-64">
-            <div class="container px-4 mb-5">
-                <div class="row mb-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle">
-                    <div class="col-12 text-center fs-16 fs-md-32 text-title">MINT</div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-8 offset-lg-2">
-                        <div class="row ff-felix fs-32 fs-md-64 fs-lg-80 counter ps-3" data-date="2022-04-21 00:17:00">
-                            <div class="col text-center">
-                                <span class="days ls-30-percent"></span>
-                                <div class="fs-10 fs-md-16 ls-30-percent text-grey">Days</div>
-                            </div>
-                            <div class="col px-0 text-center">:</div>
-                            <div class="col text-center">
-                                <span class="hours ls-30-percent"></span>
-                                <div class="fs-10 fs-md-16 ls-30-percent text-grey">Hours</div>
-                            </div>
-                            <div class="col px-0 text-center">:</div>
-                            <div class="col px-0 text-center">
-                                <span class="minutes ls-30-percent"></span>
-                                <div class="fs-10 fs-md-16 ls-30-percent text-grey">Minutes</div>
-                            </div>
-                            <div class="col px-0 text-center">:</div>
-                            <div class="col ps-0 text-center">
-                                <span class="seconds ls-30-percent"></span>
-                                <div class="fs-10 fs-md-16 ls-30-percent text-grey">Seconds</div>
-                            </div>
-                        </div>
+        <div class="content">
+            <section id="mint" class="spacer-24 spacer-lg-64">
+                <div class="container px-4 mb-5">
+                    <div class="row mb-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle">
+                        <div class="col-12 text-center fs-16 fs-md-32 text-title">MINT</div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="collection" class="spacer-40 spacer-lg-64 spacer-xl-80">
-            <div class="container mb-5">
-                <div class="row mb-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle">
-                    <div class="col-12 text-center fs-16 fs-md-32 text-title">COLLECTION</div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div id="owl-collections" class="owl-carousel collections-carousel">
-                            <div>
-                                <img src="assets/images/img-slide-1.png" alt="">
-                            </div>
-                            <div>
-                                <img src="assets/images/img-slide-2.png" alt="">
-                            </div>
-                            <div>
-                                <img src="assets/images/img-slide-3.png" alt="">
+                    <div class="row">
+                        <div class="col-12 col-lg-8 offset-lg-2">
+                            <div class="row ff-felix fs-32 fs-md-64 fs-lg-80 counter ps-3" data-date="2022-04-21 00:17:00">
+                                <div class="col text-center">
+                                    <span class="days ls-30-percent"></span>
+                                    <div class="fs-10 fs-md-16 ls-30-percent text-grey">Days</div>
+                                </div>
+                                <div class="col px-0 text-center">:</div>
+                                <div class="col text-center">
+                                    <span class="hours ls-30-percent"></span>
+                                    <div class="fs-10 fs-md-16 ls-30-percent text-grey">Hours</div>
+                                </div>
+                                <div class="col px-0 text-center">:</div>
+                                <div class="col px-0 text-center">
+                                    <span class="minutes ls-30-percent"></span>
+                                    <div class="fs-10 fs-md-16 ls-30-percent text-grey">Minutes</div>
+                                </div>
+                                <div class="col px-0 text-center">:</div>
+                                <div class="col ps-0 text-center">
+                                    <span class="seconds ls-30-percent"></span>
+                                    <div class="fs-10 fs-md-16 ls-30-percent text-grey">Seconds</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="lore" class="spacer-80 spacer-lg-120">
-            <div class="container mb-5">
-                <div class="row mb-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle">
-                    <div class="col-12 text-center fs-16 fs-md-32 text-title">MYTHICS LORE</div>
-                </div>
-                <div class="row spacer-lg-80 spacer-xl-120">
-                    <div class="col-12 col-md-6 pb-5">
-                        <img src="assets/images/img-lore-1.png" alt="" class="w-100">
+            </section>
+            
+            <section id="collection" class="spacer-40 spacer-lg-64 spacer-xl-80">
+                <div class="container mb-5">
+                    <div class="row mb-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle">
+                        <div class="col-12 text-center fs-16 fs-md-32 text-title">COLLECTION</div>
                     </div>
-                    <div class="col-12 col-md-6 pb-5 pt-md-5">
-                        <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
-                            Once upon a time, the matter and raw power known as Chaos created and ruled over the Universe. Over time, Chaos birthed 5 gods, the Primordials. 
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex-md-row-reverse spacer-lg-80 spacer-xl-120">
-                    <div class="col-12 col-md-6 pb-5">
-                        <img src="assets/images/img-lore-2.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-12 col-md-6 pb-5 pt-md-5">
-                        <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
-                            The Primordials represented the fundamental forces of nature. As millennia passed, the Primordials found the need for powerful gods to rule the vast macrocosm. Thus, the Titans were created and with them brought about the Golden era.  
-                        </div>
-                    </div>
-                </div>
-                <div class="row spacer-lg-80 spacer-xl-120">
-                    <div class="col-12 col-md-6 pb-5">
-                        <img src="assets/images/img-lore-3.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-12 col-md-6 pb-5 pt-md-5">
-                        <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
-                            The Titans were transcendent beings who ruled for aeons and eventually birthed the Silver Era of Gods. Zeus and his Olympians. After their creation, a prophecy was foretold-that one day the Olympians would overthrow the Titans. As a result, Cronus, their leader, consumed them to preserve his rule. 
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex-md-row-reverse spacer-lg-80 spacer-xl-120">
-                    <div class="col-12 col-md-6 pb-5">
-                        <img src="assets/images/img-lore-4.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-12 col-md-6 pb-5 pt-md-5">
-                        <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
-                            The Olympians escaped and waged war against the Titans, eventually triumphant, proving their power and status. Ultimately, though, the power drove them maniacal. As a result, the world languished. 
-                        </div>
-                    </div>
-                </div>
-                <div class="row spacer-lg-80 spacer-xl-120">
-                    <div class="col-12 col-md-6 pb-5">
-                        <img src="assets/images/img-lore-5.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-12 col-md-6 pb-5 pt-md-5">
-                        <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
-                            However, they made one fatal flaw; during their war with the Titans, artefacts were lost, artefacts with the power to create 5000 supreme entities that came to be known as the Mythics. Much like the Titans, the Olympians feared the Mythics and so they scattered them across the Universe.
-                        </div>
-                    </div>
-                </div>
-                <div class="row flex-md-row-reverse spacer-lg-80 spacer-xl-120">
-                    <div class="col-12 col-md-6 pb-5">
-                        <img src="assets/images/img-lore-6.png" alt="" class="w-100">
-                    </div>
-                    <div class="col-12 col-md-6 pb-5 pt-md-5">
-                        <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
-                            For centuries these Mythics had been lost, scouring the cosmos. However, their inception birthed a modern era. It is our duty at the Modern Mythics Allegiance to gather the Mythics and bring back peace and serenity to the world.
-                        </div>
-                    </div>
-                </div>
-                <div class="row spacer-lg-80 spacer-xl-120">
-                    <div class="col-12 text-center fs-14 fs-md-16 fs-lg-32 fw-lighter ls-30-percent">
-                        Long live the Mythics.
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="roadmap" class="spacer-80 spacer-lg-120">
-            <div class="container mb-5">
-                <div class="row mb-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle">
-                    <div class="col-12 text-center fs-16 fs-md-32 text-title">ROADMAP</div>
-                </div>
-                <div class="row roadmap-flow">
-                    <div class="col-12">
-                        <div class="row position-relative">
-                            <di class="roadmap-start"></di>
-                            <di class="roadmap-middle"></di>
-                            <di class="roadmap-end"></di>
-                            <div class="col-12 col-md-6 offset-md-6 roadmap-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="owl-collections" class="owl-carousel collections-carousel">
                                 <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10 offset-xl-2">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">10%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Bestowment</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">Our First drop. The Modern Mythics Allegiance releases our first collection to become available to mint, lucky minters will receive exclusive bonuses courtesy of MM. </div>
+                                    <img src="assets/images/img-slide-1.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="assets/images/img-slide-2.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="assets/images/img-slide-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="lore" class="spacer-80 spacer-lg-120 spacer-xl-160">
+                <div class="container mb-5">
+                    <div class="row mb-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle" data-aos="fade-up">
+                        <div class="col-12 text-center fs-16 fs-md-32 text-title">MYTHICS LORE</div>
+                    </div>
+                    <div class="row spacer-lg-80 spacer-xl-120">
+                        <div class="col-12 col-md-6 pb-5" data-aos="fade-up">
+                            <img src="assets/images/img-lore-1.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-12 col-md-6 pb-5 pt-md-5" data-aos="fade-up">
+                            <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
+                                Once upon a time, the matter and raw power known as Chaos created and ruled over the Universe. Over time, Chaos birthed 5 gods, the Primordials. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-md-row-reverse spacer-lg-80 spacer-xl-120">
+                        <div class="col-12 col-md-6 pb-5" data-aos="fade-up">
+                            <img src="assets/images/img-lore-2.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-12 col-md-6 pb-5 pt-md-5" data-aos="fade-up">
+                            <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
+                                The Primordials represented the fundamental forces of nature. As millennia passed, the Primordials found the need for powerful gods to rule the vast macrocosm. Thus, the Titans were created and with them brought about the Golden era.  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row spacer-lg-80 spacer-xl-120">
+                        <div class="col-12 col-md-6 pb-5" data-aos="fade-up">
+                            <img src="assets/images/img-lore-3.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-12 col-md-6 pb-5 pt-md-5" data-aos="fade-up">
+                            <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
+                                The Titans were transcendent beings who ruled for aeons and eventually birthed the Silver Era of Gods. Zeus and his Olympians. After their creation, a prophecy was foretold-that one day the Olympians would overthrow the Titans. As a result, Cronus, their leader, consumed them to preserve his rule. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-md-row-reverse spacer-lg-80 spacer-xl-120">
+                        <div class="col-12 col-md-6 pb-5" data-aos="fade-up">
+                            <img src="assets/images/img-lore-4.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-12 col-md-6 pb-5 pt-md-5" data-aos="fade-up">
+                            <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
+                                The Olympians escaped and waged war against the Titans, eventually triumphant, proving their power and status. Ultimately, though, the power drove them maniacal. As a result, the world languished. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row spacer-lg-80 spacer-xl-120">
+                        <div class="col-12 col-md-6 pb-5" data-aos="fade-up">
+                            <img src="assets/images/img-lore-5.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-12 col-md-6 pb-5 pt-md-5" data-aos="fade-up">
+                            <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
+                                However, they made one fatal flaw; during their war with the Titans, artefacts were lost, artefacts with the power to create 5000 supreme entities that came to be known as the Mythics. Much like the Titans, the Olympians feared the Mythics and so they scattered them across the Universe.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row flex-md-row-reverse spacer-lg-80 spacer-xl-120">
+                        <div class="col-12 col-md-6 pb-5" data-aos="fade-up">
+                            <img src="assets/images/img-lore-6.png" alt="" class="w-100">
+                        </div>
+                        <div class="col-12 col-md-6 pb-5 pt-md-5" data-aos="fade-up">
+                            <div class="fs-12 fs-md-16 fs-lg-24 fw-lighter text-grey text-center text-md-start pt-md-5">
+                                For centuries these Mythics had been lost, scouring the cosmos. However, their inception birthed a modern era. It is our duty at the Modern Mythics Allegiance to gather the Mythics and bring back peace and serenity to the world.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row spacer-lg-80 spacer-xl-120">
+                        <div class="col-12 text-center fs-14 fs-md-16 fs-lg-32 fw-lighter ls-30-percent parallax-text position-relative" data-aos="fade-up" title="Long live the Mythics.">
+                            Long live the Mythics.
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="roadmap" class="spacer-80 spacer-lg-120">
+                <div class="container mb-5">
+                    <div class="row mb-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle" data-aos="fade-up">
+                        <div class="col-12 text-center fs-16 fs-md-32 text-title">ROADMAP</div>
+                    </div>
+                    <div class="row roadmap-flow" data-aos="fade-up">
+                        <div class="col-12">
+                            <div class="row position-relative">
+                                <di class="roadmap-start"></di>
+                                <di class="roadmap-middle"></di>
+                                <di class="roadmap-end"></di>
+                                <div class="col-12 col-md-6 offset-md-6 roadmap-body flow-1">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10 offset-xl-2">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">10%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Bestowment</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">Our First drop. The Modern Mythics Allegiance releases our first collection to become available to mint, lucky minters will receive exclusive bonuses courtesy of MM. </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 roadmap-body text-md-end">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">20%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Sweepstake</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">MM releases previously unseen rare Mythics PERIODICALLY via airdrop to random holders. We will also airdrop 1 Eth to random holders with 2+ NFTs bimonthly. This means even if you are late to the allegiance you still have a chance to own something legendary. </div>
+                                <div class="col-12 col-md-6 roadmap-body text-md-end flow-2">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">20%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Sweepstake</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">MM releases previously unseen rare Mythics PERIODICALLY via airdrop to random holders. We will also airdrop 1 Eth to random holders with 2+ NFTs bimonthly. This means even if you are late to the allegiance you still have a chance to own something legendary. </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                             <div class="col-12 col-md-6 offset-md-6 roadmap-body">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10 offset-xl-2">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">30%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Remembrance</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">The MM team will always remember our values. With that $50,000 will be donated to an education-focused charity.</div>
+                                 <div class="col-12 col-md-6 offset-md-6 roadmap-body flow-3">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10 offset-xl-2">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">30%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Remembrance</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">The MM team will always remember our values. With that $50,000 will be donated to an education-focused charity.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 roadmap-body text-md-end">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">40%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Goblet</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">The Goblet is released. If you choose to feed this to your Mythic it will help transform your NFT into a brand new, high definition, 3D Version of itself that can be used in the Metaverse. All current NFTs can be transformed.</div>
+                                <div class="col-12 col-md-6 roadmap-body text-md-end flow-4">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">40%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Goblet</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">The Goblet is released. If you choose to feed this to your Mythic it will help transform your NFT into a brand new, high definition, 3D Version of itself that can be used in the Metaverse. All current NFTs can be transformed.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 offset-md-6 roadmap-body">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10 offset-xl-2">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">50%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Merch</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">Merchandise is released, from which various pieces will be sent for free to random holders with 2+ Modern Mythics.</div>
+                                <div class="col-12 col-md-6 offset-md-6 roadmap-body flow-5">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10 offset-xl-2">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">50%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Merch</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">Merchandise is released, from which various pieces will be sent for free to random holders with 2+ Modern Mythics.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 roadmap-body text-md-end">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">60%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Gathering</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">A social network only for MM members is created. You will be able to chat with each other, network, and meet in real life. Physical events in the form of banquets in different cities (Singapore, Dubai, London etc.) will be organised. It will be totally free to MM members. 2 lucky Mythics holders will get flown out and put up courtesy of MM.</div>
+                                <div class="col-12 col-md-6 roadmap-body text-md-end flow-6">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">60%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Gathering</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">A social network only for MM members is created. You will be able to chat with each other, network, and meet in real life. Physical events in the form of banquets in different cities (Singapore, Dubai, London etc.) will be organised. It will be totally free to MM members. 2 lucky Mythics holders will get flown out and put up courtesy of MM.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 offset-md-6 roadmap-body">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10 offset-xl-2">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">70%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">Children of Chaos</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">5000 darker NFTs will be released. These NFTs will also be able to transform with The Goblet.</div>
+                                <div class="col-12 col-md-6 offset-md-6 roadmap-body flow-7">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10 offset-xl-2">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">70%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">Children of Chaos</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">5000 darker NFTs will be released. These NFTs will also be able to transform with The Goblet.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 roadmap-body text-md-end">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">80%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Metaverse</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">The Modern Mythics Allegiance will purchase a plot of land in the Metaverse that will act as Olympus and be the headquarters for the community and it’s DAO. All 3D NFTs will have full functionality in the metaverse. You will be able to use your NFT in any way you please, whether in the Metaverse or in games. You will truly be a god amongst men.</div>
+                                <div class="col-12 col-md-6 roadmap-body text-md-end flow-8">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">80%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Metaverse</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">The Modern Mythics Allegiance will purchase a plot of land in the Metaverse that will act as Olympus and be the headquarters for the community and it’s DAO. All 3D NFTs will have full functionality in the metaverse. You will be able to use your NFT in any way you please, whether in the Metaverse or in games. You will truly be a god amongst men.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 offset-md-6 roadmap-body">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10 offset-xl-2">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">90%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Battle</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">The launch of a play-to-earn video game based on the NFTs  that you own.</div>
+                                <div class="col-12 col-md-6 offset-md-6 roadmap-body flow-9">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10 offset-xl-2">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">90%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Battle</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">The launch of a play-to-earn video game based on the NFTs  that you own.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 roadmap-body text-md-end">
-                                <div>
-                                    <div class="row">
-                                        <div class="col-12 col-xl-10">
-                                            <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">100%</div>
-                                            <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Future</div>
-                                            <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">Being our first collection, owning a Mythic will have many benefits for future deliveries and collaborations we have. By holding a Mythic, we want to reward you with privileges that will give you access to many benefits in the NFT space and later in the metaverse. As with any fundamentally strong project, The Modern Mythics Allegiance will grow with new and exciting projects that will be released. All of them will benefit our Mythics holders for being the first to help us reach this point.</div>
+                                <div class="col-12 col-md-6 roadmap-body text-md-end flow-10">
+                                    <div>
+                                        <div class="row">
+                                            <div class="col-12 col-xl-10">
+                                                <div class="fs-32 fs-md-40 fs-lg-64 text-gold mb-4 mb-lg-3 ff-felix">100%</div>
+                                                <div class="text-light fs-16 fs-md-20 fs-lg-24 mb-3">The Future</div>
+                                                <div class="fs-12 fs-md-14 fs-lg-20 fw-lighter text-grey">Being our first collection, owning a Mythic will have many benefits for future deliveries and collaborations we have. By holding a Mythic, we want to reward you with privileges that will give you access to many benefits in the NFT space and later in the metaverse. As with any fundamentally strong project, The Modern Mythics Allegiance will grow with new and exciting projects that will be released. All of them will benefit our Mythics holders for being the first to help us reach this point.</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -332,238 +346,239 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="team" class="spacer-80 spacer-lg-120">
-            <div class="container mb-5 mt-5 px-4">
-                <div class="row mb-5 mt-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle">
-                    <div class="col-12 text-center fs-16 fs-md-32 text-title">OUR TEAM</div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6 text-center mb-5 pe-lg-5">
-                        <div class="fs-24 ff-felix text-light mb-2 ls-2">CHAOS</div>
-                        <img src="assets/images/photo-chaos.png" alt="" class="w-100 mb-3">
-                        <div class="fs-24 ff-felix text-light mb-2 ls-2">CO-FOUNDER / CEO</div>
-                        <div class="text-center">
-                            <a href="">
-                                <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
-                                    <div class="w-24 d-inline-block">
-                                        <span class="icon-linked-in"></span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="">
-                                <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
-                                    <div class="w-24 d-inline-block">
-                                        <span class="icon-instagram"></span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="">
-                                <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
-                                    <div class="w-24 d-inline-block">
-                                        <span class="icon-twitter"></span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+            </section>
+    
+            <section id="creators" class="spacer-80 spacer-lg-120">
+                <div class="container mb-5 mt-5 px-4">
+                    <div class="row mb-5 mt-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle" data-aos="fade-up">
+                        <div class="col-12 text-center fs-16 fs-md-32 text-title">OUR TEAM</div>
                     </div>
-                    <div class="col-12 col-md-6 text-center mb-5 ps-lg-5">
-                        <div class="fs-24 ff-felix text-light mb-2 ls-2">PRNCE</div>
-                        <img src="assets/images/photo-prnce.png" alt="" class="w-100 mb-3">
-                        <div class="fs-24 ff-felix text-light mb-2 ls-2">CO-FOUNDER / COO</div>
-                        <div class="text-center">
-                            <a href="">
-                                <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
-                                    <div class="w-24 d-inline-block">
-                                        <span class="icon-linked-in"></span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="">
-                                <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
-                                    <div class="w-24 d-inline-block">
-                                        <span class="icon-instagram"></span>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="">
-                                <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
-                                    <div class="w-24 d-inline-block">
-                                        <span class="icon-twitter"></span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="spacer-80 spacer-lg-120">
-            <div class="container mb-5 mt-5 px-4">
-                <div class="row mb-5 mt-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle">
-                    <div class="col-12 text-center fs-16 fs-md-32 text-title">FAQS</div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-lg-10 offset-lg-1">
-                        <div class="row mb-4">
-                            <div class="col-12 text-center">
-                                <div class="text-gold mb-4 fs-14 fs-md-20">How can I join the Modern Mythics Allegiance?</div>
-                                <div class="text-light fw-lighter fs-12 fs-md-16">Your Mythic will serve as your NFT as well as your pledge to the Allegiance Join our discord to stay up to date and be the first to find out when the mint goes live</div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="accordion faq-accordion" id="faq-accordion" data-aos="zoom-in-down">
-                                <div class="accordion-item text-center my-md-4">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            <div class="fs-14 fs-md-20 text-center">When will I be able to mint my Mythics?</div>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faq-accordion">
-                                        <div class="accordion-body fs-12 fs-md-16">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero magnam natus corrupti sequi! Inventore dignissimos provident dolor! Enim praesentium sint alias dolorum expedita distinctio dicta eaque voluptatum excepturi nostrum!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item text-center my-md-4">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <div class="fs-14 fs-md-20 text-center">How many Mythics will be available?</div>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq-accordion">
-                                        <div class="accordion-body fs-12 fs-md-16">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea alias eaque dicta reiciendis aut libero fugit totam repellat, excepturi in nihil natus. Eaque et id nobis iusto deleniti quam odit.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item text-center my-md-4">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <div class="fs-14 fs-md-20 text-center">What blockchain will you be using?</div>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq-accordion">
-                                        <div class="accordion-body fs-12 fs-md-16">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam quae fugiat repellendus corrupti. Minus accusamus quis aut amet, debitis animi officia? Dolores soluta eligendi quod officia nobis delectus qui!
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item text-center my-md-4">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            <div class="fs-14 fs-md-20 text-center">Will there be a pre-sale?</div>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq-accordion">
-                                        <div class="accordion-body fs-12 fs-md-16">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nisi, aliquid quidem fugit totam at soluta optio error consectetur? Animi aut suscipit iure deleniti, nemo amet beatae similique recusandae voluptate.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item text-center my-md-4">
-                                    <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            <div class="fs-14 fs-md-20 text-center">Where will I be able to view my NFTs?</div>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faq-accordion">
-                                        <div class="accordion-body fs-12 fs-md-16">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error adipisci, nisi vel repellendus sapiente dignissimos, officia placeat aliquam aspernatur laudantium officiis iure ratione, ullam consequuntur qui esse aperiam excepturi.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item text-center my-md-4">
-                                    <h2 class="accordion-header" id="headingSix">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                            <div class="fs-14 fs-md-20 text-center">What are your secondary royalty fees?</div>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faq-accordion">
-                                        <div class="accordion-body fs-12 fs-md-16">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error adipisci, nisi vel repellendus sapiente dignissimos, officia placeat aliquam aspernatur laudantium officiis iure ratione, ullam consequuntur qui esse aperiam excepturi.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item text-center my-md-4">
-                                    <h2 class="accordion-header" id="headingSeven">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                            <div class="fs-14 fs-md-20 text-center">Will you do giveaways?</div>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faq-accordion">
-                                        <div class="accordion-body fs-12 fs-md-16">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error adipisci, nisi vel repellendus sapiente dignissimos, officia placeat aliquam aspernatur laudantium officiis iure ratione, ullam consequuntur qui esse aperiam excepturi.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item text-center my-md-4">
-                                    <h2 class="accordion-header" id="headingEight">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                            <div class="fs-14 fs-md-20 text-center">What do you mean by 5000 for now?</div>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faq-accordion">
-                                        <div class="accordion-body fs-12 fs-md-16">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error adipisci, nisi vel repellendus sapiente dignissimos, officia placeat aliquam aspernatur laudantium officiis iure ratione, ullam consequuntur qui esse aperiam excepturi.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="footer" class="spacer-40 spacer-lg-64">
-            <div class="container mb-5">
-                <div class="row">
-                    <div class="col-12 py-3">
-                        <div class="gold-line"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="row mt-4 pt-4">
-                            <div class="col-4 col-md-2 offset-4 offset-md-5 px-sm-3 px-lg-5">
-                                <img src="assets/images/img-logo-mm.png" alt="" class="w-100">
-                            </div>
-                        </div>
-                        <div class="row mt-4">
-                            <div class="col-12 text-center">
-                                <a href="">
-                                    <div class="bg-gold rounded-circle p-2 d-inline-block mx-2 me-md-3 w-40">
+                    <div class="row">
+                        <div class="col-12 col-md-6 text-center mb-5 pe-lg-5" data-aos="fade-up">
+                            <div class="fs-24 ff-felix text-light mb-2 ls-2">CHAOS</div>
+                            <img src="assets/images/photo-chaos.png" alt="" class="w-100 mb-3">
+                            <div class="fs-24 ff-felix text-light mb-2 ls-2">CO-FOUNDER / CEO</div>
+                            <div class="text-center" id="socials">
+                                <a href="" class="hover-zoom d-inline-block">
+                                    <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
                                         <div class="w-24 d-inline-block">
-                                            <span class="icon-discord"></span>
+                                            <span class="icon-linked-in"></span>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
-                                    <div class="bg-gold rounded-circle p-2 d-inline-block mx-2 w-40">
+                                <a href="" class="hover-zoom d-inline-block">
+                                    <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
                                         <div class="w-24 d-inline-block">
                                             <span class="icon-instagram"></span>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="">
-                                    <div class="bg-gold rounded-circle p-2 d-inline-block mx-2 ms-md-3 w-40">
+                                <a href="" class="hover-zoom d-inline-block">
+                                    <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
                                         <div class="w-24 d-inline-block">
                                             <span class="icon-twitter"></span>
                                         </div>
                                     </div>
                                 </a>
                             </div>
-                            <div class="col-12 pt-3 text-light text-center pt-3 fw-lighter">
-                                2022 Modern Mythics All rights reserved
+                        </div>
+                        <div class="col-12 col-md-6 text-center mb-5 ps-lg-5" data-aos="fade-up">
+                            <div class="fs-24 ff-felix text-light mb-2 ls-2">PRNCE</div>
+                            <img src="assets/images/photo-prnce.png" alt="" class="w-100 mb-3">
+                            <div class="fs-24 ff-felix text-light mb-2 ls-2">CO-FOUNDER / COO</div>
+                            <div class="text-center">
+                                <a href="" class="hover-zoom d-inline-block">
+                                    <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
+                                        <div class="w-24 d-inline-block">
+                                            <span class="icon-linked-in"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="hover-zoom d-inline-block">
+                                    <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
+                                        <div class="w-24 d-inline-block">
+                                            <span class="icon-instagram"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="hover-zoom d-inline-block">
+                                    <div class="bg-social rounded-circle p-2 d-inline-block mx-2 w-40">
+                                        <div class="w-24 d-inline-block">
+                                            <span class="icon-twitter"></span>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+    
+            <section id="faqs" class="spacer-80 spacer-lg-120">
+                <div class="container mb-5 mt-5 px-4">
+                    <div class="row mb-5 mt-5 text-gold ff-felix text-gold ls-40-percent d-flex align-items-middle" data-aos="fade-up">
+                        <div class="col-12 text-center fs-16 fs-md-32 text-title">FAQS</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-10 offset-lg-1">
+                            <div class="row mb-4">
+                                <div class="col-12 text-center">
+                                    <div class="text-gold mb-4 fs-14 fs-md-20" data-aos="fade-up">How can I join the Modern Mythics Allegiance?</div>
+                                    <div class="text-light fw-lighter fs-12 fs-md-16" data-aos="fade-up">Your Mythic will serve as your NFT as well as your pledge to the Allegiance Join our discord to stay up to date and be the first to find out when the mint goes live</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="accordion faq-accordion" id="faq-accordion" data-aos="zoom-in-down">
+                                    <div class="accordion-item text-center my-md-4 hover-zoom" data-aos="fade-up">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                <div class="fs-14 fs-md-20 text-center">When will I be able to mint my Mythics?</div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body fs-12 fs-md-16">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vero magnam natus corrupti sequi! Inventore dignissimos provident dolor! Enim praesentium sint alias dolorum expedita distinctio dicta eaque voluptatum excepturi nostrum!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item text-center my-md-4 hover-zoom" data-aos="fade-up">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="fs-14 fs-md-20 text-center">How many Mythics will be available?</div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body fs-12 fs-md-16">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea alias eaque dicta reiciendis aut libero fugit totam repellat, excepturi in nihil natus. Eaque et id nobis iusto deleniti quam odit.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item text-center my-md-4 hover-zoom" data-aos="fade-up">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="fs-14 fs-md-20 text-center">What blockchain will you be using?</div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body fs-12 fs-md-16">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsam quae fugiat repellendus corrupti. Minus accusamus quis aut amet, debitis animi officia? Dolores soluta eligendi quod officia nobis delectus qui!
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item text-center my-md-4 hover-zoom" data-aos="fade-up">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                <div class="fs-14 fs-md-20 text-center">Will there be a pre-sale?</div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body fs-12 fs-md-16">
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium nisi, aliquid quidem fugit totam at soluta optio error consectetur? Animi aut suscipit iure deleniti, nemo amet beatae similique recusandae voluptate.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item text-center my-md-4 hover-zoom" data-aos="fade-up">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                <div class="fs-14 fs-md-20 text-center">Where will I be able to view my NFTs?</div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body fs-12 fs-md-16">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error adipisci, nisi vel repellendus sapiente dignissimos, officia placeat aliquam aspernatur laudantium officiis iure ratione, ullam consequuntur qui esse aperiam excepturi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item text-center my-md-4 hover-zoom" data-aos="fade-up">
+                                        <h2 class="accordion-header" id="headingSix">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                <div class="fs-14 fs-md-20 text-center">What are your secondary royalty fees?</div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body fs-12 fs-md-16">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error adipisci, nisi vel repellendus sapiente dignissimos, officia placeat aliquam aspernatur laudantium officiis iure ratione, ullam consequuntur qui esse aperiam excepturi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item text-center my-md-4 hover-zoom" data-aos="fade-up">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                <div class="fs-14 fs-md-20 text-center">Will you do giveaways?</div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body fs-12 fs-md-16">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error adipisci, nisi vel repellendus sapiente dignissimos, officia placeat aliquam aspernatur laudantium officiis iure ratione, ullam consequuntur qui esse aperiam excepturi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item text-center my-md-4 hover-zoom" data-aos="fade-up">
+                                        <h2 class="accordion-header" id="headingEight">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                <div class="fs-14 fs-md-20 text-center">What do you mean by 5000 for now?</div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faq-accordion">
+                                            <div class="accordion-body fs-12 fs-md-16">
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet error adipisci, nisi vel repellendus sapiente dignissimos, officia placeat aliquam aspernatur laudantium officiis iure ratione, ullam consequuntur qui esse aperiam excepturi.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="discord" class="spacer-40 spacer-lg-64">
+                <div class="container mb-5">
+                    <div class="row">
+                        <div class="col-12 py-3" data-aos="fade-up">
+                            <div class="gold-line"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row mt-4 pt-4">
+                                <div class="col-4 col-md-2 offset-4 offset-md-5 px-sm-3 px-lg-5" data-aos="fade-up">
+                                    <img src="assets/images/img-logo-mm.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-12 text-center">
+                                    <a href="" class="d-inline-block hover-zoom" data-aos="fade-up">
+                                        <div class="bg-gold rounded-circle p-2 d-inline-block mx-2 me-md-3 w-40">
+                                            <div class="w-24 d-inline-block">
+                                                <span class="icon-discord"></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="d-inline-block hover-zoom" data-aos="fade-up">
+                                        <div class="bg-gold rounded-circle p-2 d-inline-block mx-2 w-40">
+                                            <div class="w-24 d-inline-block">
+                                                <span class="icon-instagram"></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="" class="d-inline-block hover-zoom" data-aos="fade-up">
+                                        <div class="bg-gold rounded-circle p-2 d-inline-block mx-2 ms-md-3 w-40">
+                                            <div class="w-24 d-inline-block">
+                                                <span class="icon-twitter"></span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-12 pt-3 text-light text-center pt-3 fw-lighter">
+                                    2022 Modern Mythics All rights reserved
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="sky"></div>
+        </div>
         
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -575,6 +590,7 @@
         <script src="assets/js/app.js"></script>
         <script src="assets/js/icon.js"></script>
         <script src="assets/js/countdown.js"></script>
+        <script src="assets/js/scrollmagic.js"></script>
         <script src="assets/js/slider.js"></script>
     </body>
 </html>

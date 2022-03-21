@@ -45,4 +45,19 @@ $(window).scroll(function () {
             $('.roadmap-end').css('height', (percentage - 5) + '%')
         }
     }
+    revealFlow(percentage)
 })
+
+function revealFlow(p) {
+    $('.roadmap-body').each(function() {
+        var position = $(this).position();
+        var percentTop = position.top/$('.roadmap-flow').height()*100;
+        if(p >= (parseFloat(percentTop) + 5)) {
+            $(this).addClass('active');        
+        }
+        
+        if(p <= (parseFloat(percentTop) + 5)) {
+            $(this).removeClass('active');        
+        }
+    })
+}

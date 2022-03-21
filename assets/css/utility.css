@@ -122,6 +122,9 @@ a {
 .spacer-120 {
     margin-top: 120px;
 }
+.z-index-3 {
+    z-index: 3;
+}
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
@@ -193,35 +196,38 @@ a {
         height: 40px;
     }
     .spacer-lg-64 {
-        margin-top: 64px;
+        padding-top: 64px;
     }
     .spacer-lg-80 {
-        margin-top: 80px;
+        padding-top: 80px;
     }
     .spacer-lg-96 {
-        margin-top: 96px;
+        padding-top: 96px;
     }
     .spacer-lg-120 {
-        margin-top: 120px;
+        padding-top: 120px;
     }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
 @media (min-width: 1200px) {
     .spacer-xl {
-        margin-top: 120px;
+        padding-top: 120px;
     }
     .spacer-xl-64 {
-        margin-top: 64px;
+        padding-top: 64px;
     }
     .spacer-xl-80 {
-        margin-top: 80px;
+        padding-top: 80px;
     }
     .spacer-xl-96 {
-        margin-top: 96px;
+        padding-top: 96px;
     }
     .spacer-xl-120 {
-        margin-top: 120px;
+        padding-top: 120px;
+    }
+    .spacer-xl-160 {
+        padding-top: 160px;
     }
 }
 

@@ -36,18 +36,18 @@ $("a[href*=\\#]:not([href=\\#])").on("click", function () {
 
 $(window).scroll(function () {
     onScroll();
-    if ($(this).scrollTop() > ($("#hero").height() - 54)) {
+    if ($(this).scrollTop() > ($("#hero").height() - 500)) {
         $('.nav').addClass('sticky');
-        $('#navbar .container').addClass('sticky');
+        $('#navbar .nav-mobile').addClass('sticky');
     } else {
         $('.nav').removeClass('sticky');
-        $('#navbar .container').removeClass('sticky');
+        $('#navbar .nav-mobile').removeClass('sticky');
     }
 });
 
 function onScroll() {
     var scrollPos = $(document).scrollTop();
-    $(".nav a").each(function() {
+    $(".nav ul > li > a").each(function() {
       var currLink = $(this);
 
       try {
@@ -56,7 +56,7 @@ function onScroll() {
           (refElement.position().top - 100) <= scrollPos &&
           (refElement.position().top - 100) + refElement.height() > scrollPos
         ) {
-          $(".nav li a").removeClass("active");
+          $(".nav ul > li > a").removeClass("active");
           currLink.addClass("active");
         } else {
           currLink.removeClass("active");
@@ -66,3 +66,6 @@ function onScroll() {
       }
     });
 }
+
+
+    
