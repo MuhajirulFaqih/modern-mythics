@@ -91,3 +91,16 @@ $('.btn-max').click(function() {
     $('.counter-text').text(counter)
     $('.counter-input').val(counter)
 })
+
+//Preloader
+$(document).ready(function(){
+    $(window).on('load', function(){
+        setTimeout(function() {
+            $("#preloader").animate({
+                opacity: 0
+            }, 3000, 'swing', function () {
+                $("#preloader").remove();
+            });
+        }, 500)
+    });
+})
