@@ -323,6 +323,30 @@ body {
     background: white;
     z-index: -1;
 }
+.bg-mint {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(5px);
+    position: relative;
+    overflow: hidden;
+}
+.bg-mint::before {
+    content: url("data:image/svg+xml,%3Csvg width='100%' viewBox='0 0 471 437' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_b_972_740)'%3E%3Crect x='0.5' y='0.5' width='470' height='436' rx='3.5' stroke='url(%23paint0_linear_972_740)' stroke-opacity='0.7'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_b_972_740' x='-8' y='-8' width='487' height='453' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeGaussianBlur in='BackgroundImage' stdDeviation='4'/%3E%3CfeComposite in2='SourceAlpha' operator='in' result='effect1_backgroundBlur_972_740'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_backgroundBlur_972_740' result='shape'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_972_740' x1='32.0912' y1='-118.952' x2='279.971' y2='474.658' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='white' stop-opacity='0.3'/%3E%3Cstop offset='0.661458' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.mint-input-outer {
+    border-bottom: .5px solid rgba(224, 224, 224, 0.555);
+}
+.mint-input {
+    outline: none !important;
+    border: none;
+    background: transparent;
+    color: #FFFFFF;
+    text-align: right !important;
+}
 
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {

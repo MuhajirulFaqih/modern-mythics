@@ -67,5 +67,27 @@ function onScroll() {
     });
 }
 
+//Counter
+var counter = 0;
+$('.counter-text').text(counter)
+$('.counter-input').val(counter)
+$('.btn-minus').click(function() {
+    if(counter - 1 >= 0) {
+        counter--;
+        $('.counter-text').text(counter)
+        $('.counter-input').val(counter)
+    }
+})
+$('.btn-plus').click(function() {
+    if(counter + 1 <= 10) {
+        counter++;
+        $('.counter-text').text(counter)
+        $('.counter-input').val(counter)
+    }
+})
 
-    
+$('.btn-max').click(function() {
+    counter = 10
+    $('.counter-text').text(counter)
+    $('.counter-input').val(counter)
+})
