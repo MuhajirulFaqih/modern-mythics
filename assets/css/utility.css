@@ -104,7 +104,9 @@ a {
 .w-40 {
     width: 40px;
     height: 40px;
-    padding-top: 9px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .spacer-24 {
     margin-top: 24px;
