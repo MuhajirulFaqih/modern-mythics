@@ -1,3 +1,9 @@
+var elem = ""
+
+for (let index = 0; index < 29; index++) {
+    elem += `<div><img src="assets/images/gallery/` + (index + 1) + `.jpg" alt=""></div>`
+}
+$(".owl-carousel").html(elem);
 var owlSlider = $('#owl-collections');
 owlSlider.owlCarousel({
     navigation: true,
