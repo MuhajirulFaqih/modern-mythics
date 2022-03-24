@@ -150,6 +150,9 @@ a {
     padding: 9px 16px 8px 16px;
     border-radius: 24px;
 }
+.select-none {
+    user-select: none;
+}
 /* `sm` applies to small devices (landscape phones, less than 576px) */
 @media (min-width: 576px) {
     

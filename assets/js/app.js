@@ -69,27 +69,23 @@ function onScroll() {
 
 //Counter
 var counter = 0;
+var cost = 0;
 $('.counter-text').text(counter)
 $('.counter-input').val(counter)
+$('.counter-cost').text(cost)
 $('.btn-minus').click(function() {
     if(counter - 1 >= 0) {
         counter--;
         $('.counter-text').text(counter)
         $('.counter-input').val(counter)
+        $('.counter-cost').text((0.08 * counter))
     }
 })
 $('.btn-plus').click(function() {
-    if(counter + 1 <= 10) {
-        counter++;
-        $('.counter-text').text(counter)
-        $('.counter-input').val(counter)
-    }
-})
-
-$('.btn-max').click(function() {
-    counter = 10
+    counter++;
     $('.counter-text').text(counter)
     $('.counter-input').val(counter)
+    $('.counter-cost').text((0.08 * counter))
 })
 
 //Preloader
