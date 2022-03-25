@@ -291,6 +291,10 @@ body {
     color: #F8F8F8;
 }
 
+.faq-accordion .accordion-header:hover .accordion-button {
+    color: #C79464 !important;
+}
+
 .faq-accordion .accordion-button:focus,
 .faq-accordion .accordion-button:not(.collapsed) {
     background: transparent;
