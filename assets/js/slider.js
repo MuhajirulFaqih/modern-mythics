@@ -13,16 +13,19 @@ owlSlider.owlCarousel({
     autoWidth: false,
     loop: true,
     navText : [ '<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M15 18.0423L9 12.0282L15 6.01416" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> ', '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M9 18L15 12L9 6" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg> '],
-    autoplay: true,
     center: true,
     responsiveClass: true,
     margin: 0,
     items: 2,
+    smartSpeed: 300,
+    animateIn: 'ease-in-out',
+    animateOut: 'ease-in-out',
     responsive: {
         480: {
             items: 3,
         },
         992: {
+            slideBy: 3,
             items: 3
         }
     }
