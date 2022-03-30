@@ -272,6 +272,7 @@ body {
     background-attachment: fixed;
     background-size: 63px;
     background-position-y: bottom;
+    background-position-x: left;
 }
 
 .faq-accordion .accordion-item {
