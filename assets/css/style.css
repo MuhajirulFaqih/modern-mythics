@@ -269,7 +269,7 @@ body {
     background-image: url('../images/trisula-end.png');
     background-repeat: no-repeat;
     z-index: 4;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-size: 63px;
     background-position-y: bottom;
     background-position-x: left;
