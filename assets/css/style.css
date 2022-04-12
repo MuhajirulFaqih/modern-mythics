@@ -105,6 +105,7 @@ body {
     left: 0;
     background: linear-gradient(180deg, rgba(16, 15, 16, 0.952278) 0%, rgba(16, 15, 16, 0.201998) 25.52%, rgba(16, 15, 16, 0) 51.56%, #100F10 100%);
     z-index: 2;
+    pointer-events: none;
 }
 
 .bg-video {
